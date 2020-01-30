@@ -35,7 +35,7 @@
 }
 
 @mixin mobile-mode-por {
-    @media (max-width: 450px) {
+    @media (max-width: 470px) {
         @content;
     }    
 }

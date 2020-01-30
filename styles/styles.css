@@ -237,7 +237,7 @@ header .wrapper .bars {
   width: 100%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   header .wrapper .bars {
     display: block;
     margin: 4% 0;
@@ -360,7 +360,7 @@ nav ul li:nth-child(5) {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   nav ul li:not(.harper) {
     visibility: hidden;
     position: absolute;
@@ -374,7 +374,7 @@ nav ul li:nth-child(5) {
 }
 
 .title-graphic {
-  background-color: blue;
+  background-color: #B9DDE7;
 }
 
 .highlight {
@@ -445,9 +445,4 @@ i {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 10%;
-}
-
-main,
-footer {
-  display: none;
 }
