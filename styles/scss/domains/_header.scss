@@ -1,0 +1,53 @@
+// Header - General
+header {
+  background-color: $background-light;
+  height: 6.5vh;
+  padding-top: 10px;
+}
+
+// Navigation
+nav {
+  margin-top: 5px;  
+  width: 100%;
+  ul {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    li:not(.harper) {
+      padding: $button;
+      transition: transform 0.2s ease-in;
+      &:hover:not(.selected) {
+        transform: scale(1.3);
+        text-shadow: 2px 2px $tint;
+      }
+        a:not(.selected) {
+            transition: transform 0.2s ease-in;
+            padding: 5px;
+            &:focus {
+                text-shadow: 2px 2px $tint;
+                outline: 2px double lighten($font-text, 20%);
+                box-shadow: 3px 3px $tint;
+            }
+            &:active {
+                outline: none;
+            }
+        }
+    }
+  }
+}
+
+nav ul li.selected a {
+  color: $tint;
+}
+
+
+
+nav ul li:nth-child(3){
+  padding: $button;
+  @include oswald(35px, bold, 1px, 29px)
+}   
+
+
+
+
