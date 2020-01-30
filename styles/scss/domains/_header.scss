@@ -1,38 +1,91 @@
 // Header - General
 header {
   background-color: $background-light;
-  height: 6.5vh;
-  padding-top: 10px;
+  height: auto;
+  padding: 10px 0;
 }
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+// Bar Benu
+
+header .wrapper .bars {
+  text-align: center;
+  display: none;
+  height: auto;
+  width: 100%;
+  @include mobile-mode-por {
+    display: block;
+    margin: 4% 0;
+  }
+}
+
+header .wrapper .bars:hover {
+    color: $tint;
+    text-shadow: 2px 2px $font-text;
+}
+
+header input[type="checkbox"]:checked ~ label{
+    color: $tint;
+    text-shadow: 2px 2px $font-text;
+}
+
+header input[type="checkbox"]:checked ~ li {
+    visibility: visible;
+    margin-left: 0;
+    position: static;
+}
+
+#bar {
+    opacity: 0;
+    position: absolute;
+}
+
+
 
 // Navigation
 nav {
-  margin-top: 5px;  
+  margin-top: 5px;
   width: 100%;
+
   ul {
     margin: 0 auto;
     width: 60%;
     display: flex;
-    justify-content: space-between;
-    li:not(.harper) {
+    justify-content: center;
+
+    @include tablet-mode-por {
+      width: 100%;
+    }
+
+    @include mobile-mode-lan {
+      flex-direction: column;
+    }
+
+    li:not(.harper):not(.bars) {
       padding: $button;
-      transition: transform 0.2s ease-in;
-      &:hover:not(.selected) {
+      transition: transform 0.2s;
+      &:hover:not(.selected){
         transform: scale(1.3);
         text-shadow: 2px 2px $tint;
       }
-        a:not(.selected) {
-            transition: transform 0.2s ease-in;
-            padding: 5px;
-            &:focus {
-                text-shadow: 2px 2px $tint;
-                outline: 2px double lighten($font-text, 20%);
-                box-shadow: 3px 3px $tint;
-            }
-            &:active {
-                outline: none;
-            }
+      a:not(.selected) {
+        transition: transform 0.2s ease-in;
+        padding: 5px;
+        &:focus {
+          text-shadow: 2px 2px $tint;
+          outline: 2px double lighten($font-text, 20%);
+          box-shadow: 3px 3px $tint;
         }
+        &:active {
+          outline: none;
+        }
+      }
     }
   }
 }
@@ -41,13 +94,29 @@ nav ul li.selected a {
   color: $tint;
 }
 
-
-
-nav ul li:nth-child(3){
+nav ul li:nth-child(5) {
   padding: $button;
-  @include oswald(35px, bold, 1px, 29px)
-}   
+  @include oswald(35px, bold, 1px, 29px);
+  @include mobile-mode-lan {
+    order: -2;
+    border-bottom: 1px double $font-text;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+  }
+}
 
+nav ul li:nth-child(3) {
+  @include mobile-mode-lan {
+    border-top: 1px double $font-text;
+  }
+}
 
+nav ul li:not(.harper){
+  @include mobile-mode-por {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -1000px;
+  }
+}
 
 

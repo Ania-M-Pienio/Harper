@@ -1,3 +1,5 @@
+
+// typography
 @mixin oswald(
     $font-size, 
     $font-weight: normal, 
@@ -11,9 +13,33 @@
         line-height: $line-height;   
 }
 
-@mixin tablet-mode {
-    @media (max-width: 1023px) {
+
+// media queries
+@mixin tablet-mode-lan {
+    @media (max-width: 1030px) {
         @content;
     }
 }
+
+@mixin tablet-mode-por {
+    @media (max-width: 960px) {
+        @content;
+    }
+
+}
+
+@mixin mobile-mode-lan {
+    @media (max-width: 680px) {
+        @content;
+    }    
+}
+
+@mixin mobile-mode-por {
+    @media (max-width: 450px) {
+        @content;
+    }    
+}
+
+
+
 

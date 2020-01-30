@@ -1,89 +1,81 @@
-
 // tools and settings
-@import url('https://fonts.googleapis.com/css?family=Cabin|Oswald&display=swap');
-@import 'variables';
-@import 'setup';
-@import 'mixins';
+@import url("https://fonts.googleapis.com/css?family=Cabin|Oswald&display=swap");
+@import "variables";
+@import "setup";
+@import "mixins";
 // divisions
-@import 'domains/header';
-@import 'domains/main/banner';
-@import 'domains/main/intro';
-@import 'domains/main/highlight';
-@import 'domains/main/links';
-@import 'domains/main/details';
-@import 'domains/main/journey';
-@import 'domains/footer';
+@import "domains/header";
+@import "domains/main/banner";
+@import "domains/main/intro";
+@import "domains/main/highlight";
+@import "domains/main/links";
+@import "domains/main/details";
+@import "domains/main/journey";
+@import "domains/footer";
 
-    // font-family: 'Cabin', sans-serif;
+// font-family: 'Cabin', sans-serif;
 
-    // font-family: 'Oswald', sans-serif;
+// font-family: 'Oswald', sans-serif;
 
-// general theme   
+// general theme
 html {
-    font-size: 62.5%;
-    color: $font-text; 
-    margin: 0;
-    padding: 0;
+  font-size: 62.5%;
+  color: $font-text;
+  margin: 0;
+  padding: 0;
 }
 
 // all images
 img {
-    width: 100%;
-    max-width: 100%;
-    display: block;
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 // all paragraphs
 p {
-    font-family: 'Cabin', sans-serif;
-    font-size: 20px;
-    line-height: 32px;  
-    color: $font-text;  
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: $font-text;
 }
-
 
 // all buttons
 button {
-    text-decoration: none;
-    border: none;
-    background-color: $accent;
-    padding: $button;
-    display: block;
+  text-decoration: none;
+  border: none;
+  background-color: $accent;
+  padding: $button;
+  display: block;
 }
 
 // all unordered lists
 ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-// all list items 
+// all list items
 li {
-    list-style-type: none;
+  list-style-type: none;
+  @include mobile-mode-lan {
+    text-align: center;
+  }
 }
 
 a {
   text-decoration: none;
   @include oswald(20px, bold, 1px, 29px);
+}
 
+i {
+  margin: 0;
+  padding: 0;
 }
 
 // all wrapper classes
 .wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: $wrapper;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: $wrapper;
 }
-
-main,
-footer {
-    display:none;
-}
-
-
-
-
-
-
-
-
