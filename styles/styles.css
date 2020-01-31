@@ -384,6 +384,12 @@ nav ul li:nth-child(5) {
   background-color: #B9DDE7;
 }
 
+@media (max-width: 960px) {
+  .banner {
+    border-bottom: 100px solid #B9DDE7;
+  }
+}
+
 .banner .banner-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,6 +407,7 @@ nav ul li:nth-child(5) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -413,22 +420,10 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 1030px) {
   .title-photo {
-    -webkit-box-shadow: 10px 10px white;
-            box-shadow: 10px 10px white;
-  }
-}
-
-@media (max-width: 960px) {
-  .title-photo {
+    width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 15px solid white;
-  }
-}
-
-@media (max-width: 960px) {
-  .title-photo img {
-    opacity: 90%;
   }
 }
 
@@ -437,28 +432,42 @@ nav ul li:nth-child(5) {
   display: -ms-flexbox;
   display: flex;
   margin-left: 10%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 @media (max-width: 960px) {
   .banner .title-logo {
+    position: absolute;
+    top: 80%;
+    bottom: 2%;
     margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
 @media (max-width: 680px) {
   .banner .title-logo {
-    margin-top: 5%;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-left: 0;
   }
 }
 
 @media (max-width: 480px) {
   .banner .title-logo {
-    width: 100%;
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .banner .title-logo {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
   }
 }
 
@@ -478,52 +487,10 @@ nav ul li:nth-child(5) {
   z-index: 1000;
 }
 
-@media (max-width: 480px) {
-  .title-name {
-    width: 100%;
-  }
-}
-
 .title-name h1 {
   font-size: 120px;
   -webkit-transition: font-size 1s;
   transition: font-size 1s;
-}
-
-@media (max-width: 1030px) {
-  .title-name h1 {
-    font-size: 100px;
-  }
-}
-
-@media (max-width: 960px) {
-  .title-name h1 {
-    position: relative;
-    top: -170px;
-    font-size: 110px;
-    color: #423a3a;
-  }
-}
-
-@media (max-width: 680px) {
-  .title-name h1 {
-    font-size: 105px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-name h1 {
-    font-size: 80px;
-    text-align: center;
-    top: -120px;
-  }
-}
-
-@media (max-width: 420px) {
-  .title-name h1 {
-    font-size: 60px;
-    top: -110px;
-  }
 }
 
 .title-graphic {
@@ -546,51 +513,6 @@ nav ul li:nth-child(5) {
   transition: width 1s;
 }
 
-@media (max-width: 1030px) {
-  .title-graphic {
-    width: 140px;
-    top: -32px;
-    left: -60px;
-  }
-}
-
-@media (max-width: 960px) {
-  .title-graphic {
-    top: -200px;
-  }
-}
-
-@media (max-width: 680px) {
-  .title-graphic {
-    width: 130px;
-    top: -210px;
-    left: -45px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-graphic {
-    width: 100%;
-    top: -250px;
-    left: -25px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: auto;
-  }
-}
-
-@media (max-width: 420px) {
-  .title-graphic {
-    top: -210px;
-    left: -45px;
-  }
-}
-
 .title-graphic img {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -603,23 +525,22 @@ nav ul li:nth-child(5) {
           transform: rotate(360deg);
 }
 
-@media (max-width: 480px) {
-  .title-graphic img {
-    width: 120px;
-  }
-}
-
-@media (max-width: 420px) {
-  .title-graphic img {
-    width: 70px;
-  }
-}
-
 .intro {
   height: 400px;
   background-color: #F6F6F6;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media (max-width: 1030px) {
+  .intro {
+    padding-top: 50px;
+    padding-top: 50px;
+  }
+}
+
+.intro-content {
+  margin-left: 400px;
 }
 
 .highlight {

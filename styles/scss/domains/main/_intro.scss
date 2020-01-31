@@ -3,5 +3,13 @@
     background-color: $tint;
     padding-top: 100px;
     padding-bottom: 100px;
+    @include tablet-mode-lan {
+        padding-top: 50px;
+        padding-top: 50px;
+    }
+}
+
+.intro-content {
+    margin-left: 400px;
 }
 
