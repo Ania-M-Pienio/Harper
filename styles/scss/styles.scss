@@ -17,7 +17,7 @@
 
 // font-family: 'Oswald', sans-serif;
 
-// general theme
+// typography
 html {
   font-size: 62.5%;
   color: $font-text;
@@ -73,9 +73,30 @@ i {
   padding: 0;
 }
 
+h1 {
+  @include oswald(80px, bold, 1px, 92px);
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  @include oswald(42px, bold, 1px, normal);
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+   @include oswald(32px, bold, 1px, normal);
+   padding: 0;
+   margin: 0;
+}
+
 // all wrapper classes
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
   padding: $wrapper;
+  @include tablet-mode-por {
+    padding: 0 5%;
+  }
 }

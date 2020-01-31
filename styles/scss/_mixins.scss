@@ -1,5 +1,5 @@
 
-// typography
+// styles
 @mixin oswald(
     $font-size, 
     $font-weight: normal, 
@@ -35,7 +35,13 @@
 }
 
 @mixin mobile-mode-por {
-    @media (max-width: 470px) {
+    @media (max-width: 480px) {
+        @content;
+    }    
+}
+
+@mixin mobile-mode-xs {
+    @media (max-width: 420px) {
         @content;
     }    
 }

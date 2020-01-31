@@ -1,13 +1,130 @@
+.banner {
+  background-color: $background-light;
+}
 
+.banner .banner-title {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 35px;
+  @include tablet-mode-por {
+    flex-direction: column;
+  }
+}
 
+// Photo
+.title-photo {
+  flex-basis: 400px;
+  box-shadow: 15px 15px white;
+  @include tablet-mode-lan {
+    box-shadow: 10px 10px white;
+  }
+  @include tablet-mode-por {
+    box-shadow: none;
+    border: 15px solid white;
+  }
+  img {
+    @include tablet-mode-por {
+      opacity: 90%;
+    }
+  }
+}
 
+// Logo
 
-// Title/Logo
-.title-photo,
-.title-graphic {
-    width: 30%;
+.banner .title-logo {
+  display: flex;
+  margin-left: 10%;
+  @include tablet-mode-por {
+    margin-left: 5%;
+  }
+  @include mobile-mode-lan {
+    margin-top: 5%;
+  }
+  @include mobile-mode-por {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+.title-name {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+  @include mobile-mode-por {
+    width: 100%;
+  }
+  h1 {
+    font-size: 120px;
+    transition: font-size 1s;
+    @include tablet-mode-lan {
+      font-size: 100px;
+    }
+    @include tablet-mode-por {
+      position: relative;
+      top: -170px;
+      font-size: 110px;
+      color: darken($font-text, 5);
+    }
+    @include mobile-mode-lan {
+      font-size: 105px;
+    }
+    @include mobile-mode-por {
+      font-size: 80px;
+      text-align: center;
+      top: -120px;
+    }
+    @include mobile-mode-xs {
+      font-size: 60px;
+      top: -110px;
+    }
+  }
 }
 
 .title-graphic {
-    background-color: $background-light; 
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 500;
+  position: relative;
+  top: -32px;
+  left: -20px;
+  transition: width 1s;
+  @include tablet-mode-lan {
+    width: 140px;
+    top: -32px;
+    left: -60px;
+  }
+  @include tablet-mode-por {
+    top: -200px;
+  }
+  @include mobile-mode-lan {
+    width: 130px;
+    top: -210px;
+    left: -45px;
+  }
+  @include mobile-mode-por {
+    width: 100%;
+    top: -250px;
+    left: -25px;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+  }
+  @include mobile-mode-xs {
+    top: -210px;
+    left: -45px;
+  }
+  img {
+    @include mobile-mode-por {
+      width: 120px;
+    }
+    @include mobile-mode-xs {
+      width: 70px;
+    }
+  }
 }
