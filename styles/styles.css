@@ -296,6 +296,12 @@ nav ul {
   }
 }
 
+@media (max-width: 480px) {
+  nav ul {
+    border-bottom: 1px solid #504646;
+  }
+}
+
 nav ul li:not(.harper):not(.bars) {
   padding: 5px 20px;
   -webkit-transition: -webkit-transform 0.2s;
@@ -458,6 +464,7 @@ nav ul li:nth-child(5) {
 
 .title-name {
   width: 300px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +589,18 @@ nav ul li:nth-child(5) {
     top: -210px;
     left: -45px;
   }
+}
+
+.title-graphic img {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.title-graphic img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (max-width: 480px) {

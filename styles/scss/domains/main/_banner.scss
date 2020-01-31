@@ -50,6 +50,7 @@
 
 .title-name {
   width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,6 +121,10 @@
     left: -45px;
   }
   img {
+      transition: transform 1s;
+      &:hover {
+          transform: rotate(360deg);
+      }
     @include mobile-mode-por {
       width: 120px;
     }

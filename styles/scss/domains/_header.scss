@@ -64,6 +64,9 @@ nav {
     @include mobile-mode-lan {
       flex-direction: column;
     }
+    @include mobile-mode-por {
+      border-bottom: 1px solid $font-text;
+    }
 
     li:not(.harper):not(.bars) {
       padding: $button;
