@@ -1,14 +1,45 @@
+
 .intro {
   height: 400px;
   background-color: $tint;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  @include tablet-mode-lan {
-    padding-top: 50px;
-    padding-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include tablet-mode-por {
+    padding: 0;
+  }
+}
+
+.intro .wrapper {
+  height: 100%;
+  @include tablet-mode-por {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .intro-content {
-  margin-left: 400px;
+  height: 100%;
+  margin-left: calc(400px + 5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include tablet-mode-por {
+    margin: 0;
+    padding: 10%;
+  }
+}
+
+.intro-content h3,
+.intro-content p {  
+  @include tablet-mode-por {
+    text-align: center;
+  }  
+}
+
+.intro-content .intro-button {
+  @include tablet-mode-por {
+    display: flex;
+    justify-content: center;
+  }
 }

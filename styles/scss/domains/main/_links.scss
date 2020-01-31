@@ -1,0 +1,51 @@
+.links {
+  background-color: $tint;
+  height: auto;
+}
+
+.links .wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    width: 50%;
+    display:flex;
+  }
+}
+
+.links-icon {
+  flex: 1;
+  height: 100%;
+}
+
+.link-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+
+.links .link-icon div {
+  height: auto;
+  border: 15px solid $background-light;
+  border-radius: 50%;
+  background-color: $background-light;
+}
+
+.links ul li:nth-of-type(1),
+.links ul li:nth-of-type(2) {
+  padding-bottom: 5%;
+}
+
+.links ul li:nth-of-type(2),
+.links ul li:nth-of-type(4) {
+  padding-left: 5%;
+}
+
+
+

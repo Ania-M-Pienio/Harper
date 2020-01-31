@@ -47,6 +47,7 @@ button {
   background-color: $accent;
   padding: $button;
   display: block;
+  @include oswald(20px, bold, 1px, 32px);
 }
 
 // all unordered lists
@@ -69,6 +70,7 @@ a {
 }
 
 i {
+  width: 100%;
   margin: 0;
   padding: 0;
 }

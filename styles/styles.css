@@ -347,7 +347,7 @@ nav ul li.selected a {
 
 nav ul li:nth-child(5) {
   padding: 5px 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #504646;
   font-size: 35px;
   font-weight: bold;
@@ -528,25 +528,146 @@ nav ul li:nth-child(5) {
 .intro {
   height: 400px;
   background-color: #F6F6F6;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 960px) {
   .intro {
-    padding-top: 50px;
-    padding-top: 50px;
+    padding: 0;
+  }
+}
+
+.intro .wrapper {
+  height: 100%;
+}
+
+@media (max-width: 960px) {
+  .intro .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .intro-content {
-  margin-left: 400px;
+  height: 100%;
+  margin-left: calc(400px + 5%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .intro-content {
+    margin: 0;
+    padding: 10%;
+  }
+}
+
+@media (max-width: 960px) {
+  .intro-content h3,
+  .intro-content p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .intro-content .intro-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .highlight {
   height: 50vh;
   background-image: url(../assets/home-image-2.jpg);
   background-size: cover;
+  background-repeat: none;
+}
+
+.links {
+  background-color: #F6F6F6;
+  height: auto;
+}
+
+.links .wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.links ul li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+.link-content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5%;
+}
+
+.links .link-icon div {
+  height: auto;
+  border: 15px solid #B9DDE7;
+  border-radius: 50%;
+  background-color: #B9DDE7;
+}
+
+.links ul li:nth-of-type(1),
+.links ul li:nth-of-type(2) {
+  padding-bottom: 5%;
+}
+
+.links ul li:nth-of-type(2),
+.links ul li:nth-of-type(4) {
+  padding-left: 5%;
 }
 
 html {
@@ -575,6 +696,12 @@ button {
   background-color: #F38D8D;
   padding: 5px 20px;
   display: block;
+  font-family: "Oswald", sans-serif;
+  color: #504646;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
 ul {
@@ -594,7 +721,7 @@ li {
 
 a {
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #504646;
   font-size: 20px;
   font-weight: bold;
@@ -603,12 +730,13 @@ a {
 }
 
 i {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #504646;
   font-size: 80px;
   font-weight: bold;
@@ -619,7 +747,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #504646;
   font-size: 42px;
   font-weight: bold;
@@ -630,7 +758,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #504646;
   font-size: 32px;
   font-weight: bold;
