@@ -1,0 +1,22 @@
+.gallery .wrapper {
+   padding-top: 4%;
+   padding-bottom: 10%;
+}
+
+.gallery .wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  li {
+     margin: 0 2% 0 2%;
+  }
+}
+
+.gallery ul li:nth-last-of-type(3){
+   margin: 0 4% 0 0;
+}
+
+.gallery ul li:nth-last-of-type(1){
+   margin: 0 0 0 4%;
+}
+
+

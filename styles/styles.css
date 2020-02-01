@@ -1156,6 +1156,45 @@ nav ul li:nth-child(5) {
   }
 }
 
+.gallery .wrapper {
+  padding-top: 4%;
+  padding-bottom: 10%;
+}
+
+.gallery .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .wrapper ul li {
+  margin: 0 2% 0 2%;
+}
+
+.gallery ul li:nth-last-of-type(3) {
+  margin: 0 4% 0 0;
+}
+
+.gallery ul li:nth-last-of-type(1) {
+  margin: 0 0 0 4%;
+}
+
+footer {
+  background-color: #504646;
+  height: 500px;
+}
+
+footer p {
+  color: #F6F6F6;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1261,7 +1300,7 @@ h3 {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 7vw;
+  padding: 0 7%;
 }
 
 @media (max-width: 970px) {
