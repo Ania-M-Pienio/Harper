@@ -412,13 +412,16 @@ nav ul li:nth-child(5) {
 }
 
 .title-photo {
+  width: 40%;
   -ms-flex-preferred-size: 400px;
       flex-basis: 400px;
+  padding: 0;
+  margin: 0;
   -webkit-box-shadow: 15px 15px white;
           box-shadow: 15px 15px white;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 970px) {
   .title-photo {
     width: 100%;
     -webkit-box-shadow: none;
@@ -428,23 +431,30 @@ nav ul li:nth-child(5) {
 }
 
 .banner .title-logo {
+  width: 60%;
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 10%;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  position: absolute;
+  top: 25%;
+  left: calc(400px + 8%);
 }
 
 @media (max-width: 970px) {
   .banner .title-logo {
+    width: 100%;
     position: absolute;
     top: 80%;
     bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    left: 5%;
   }
 }
 
@@ -452,7 +462,6 @@ nav ul li:nth-child(5) {
   .banner .title-logo {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
-    margin-left: 0;
   }
 }
 
@@ -493,6 +502,12 @@ nav ul li:nth-child(5) {
   transition: font-size 1s;
 }
 
+@media (max-width: 1050px) {
+  .title-name h1 {
+    font-size: 100px;
+  }
+}
+
 .title-graphic {
   width: 160px;
   display: -webkit-box;
@@ -511,6 +526,13 @@ nav ul li:nth-child(5) {
   left: -20px;
   -webkit-transition: width 1s;
   transition: width 1s;
+}
+
+@media (max-width: 1050px) {
+  .title-graphic {
+    width: 120px;
+    left: -65px;
+  }
 }
 
 .title-graphic img {
@@ -559,7 +581,7 @@ nav ul li:nth-child(5) {
 
 .intro-content {
   height: 100%;
-  margin-left: calc(400px + 5%);
+  margin-left: calc(400px + 8%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1133,13 +1155,24 @@ nav ul li:nth-child(5) {
   }
 }
 
-.journey-content .content-border {
+@media (max-width: 970px) {
+  .journey-content .mobile-line {
+    height: 5px;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    border-top: 1px solid #504646;
+    border-bottom: 1px solid #504646;
+  }
+}
+
+.content-border {
   -webkit-transition: width 1s, height 10s ease-in;
   transition: width 1s, height 10s ease-in;
 }
 
 @media (max-width: 970px) {
-  .journey-content .content-border {
+  .content-border {
     height: 100%;
     width: 150%;
     background-color: #F6F6F6;
@@ -1151,7 +1184,7 @@ nav ul li:nth-child(5) {
 }
 
 @media (max-width: 480px) {
-  .journey-content .content-border {
+  .content-border {
     top: 20px;
   }
 }

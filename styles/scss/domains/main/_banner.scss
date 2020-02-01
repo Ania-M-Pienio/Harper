@@ -18,14 +18,17 @@
 
 // Photo
 .title-photo {
+  width: 40%;
   flex-basis: 400px;
+  padding: 0;
+  margin: 0;
   box-shadow: 15px 15px white;
   @include tablet-mode-lan {
+  }
+  @include tablet-mode-por {
     width: 100%;
     box-shadow: none;
     border: 15px solid white;
-  }
-  @include tablet-mode-por {
   }
   img {
     @include tablet-mode-por {
@@ -36,20 +39,26 @@
 // Logo
 
 .banner .title-logo {
+  width: 60%;
+  padding: 0;
+  margin: 0;
   display: flex;
-  margin-left: 10%;
   transition: transform 1s;
+  position: absolute;
+  top: 25%;
+  left: calc(400px + 8%);
 
   @include tablet-mode-por {
+    width: 100%;
     position: absolute;
     top: 80%;
     bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    left: 5%;
   }
   @include mobile-mode-lan {
     transform: scale(0.7);
-    margin-left: 0;
   }
   @include mobile-mode-por {
     transform: scale(0.6);
@@ -67,20 +76,11 @@
   flex-direction: column;
   justify-content: center;
   z-index: 1000;
-  @include mobile-mode-por {
-  }
   h1 {
     font-size: 120px;
     transition: font-size 1s;
     @include tablet-mode-lan {
-    }
-    @include tablet-mode-por {
-    }
-    @include mobile-mode-lan {
-    }
-    @include mobile-mode-por {
-    }
-    @include mobile-mode-xs {
+      font-size: 100px;
     }
   }
 }
@@ -96,23 +96,14 @@
   left: -20px;
   transition: width 1s;
   @include tablet-mode-lan {
-  }
-  @include tablet-mode-por {
-  }
-  @include mobile-mode-lan {
-  }
-  @include mobile-mode-por {
-  }
-  @include mobile-mode-xs {
+    width: 120px;
+    left: -65px;
   }
   img {
     transition: transform 1s;
+
     &:hover {
       transform: rotate(360deg);
-    }
-    @include mobile-mode-por {
-    }
-    @include mobile-mode-xs {
     }
   }
 }

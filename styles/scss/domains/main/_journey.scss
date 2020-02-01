@@ -49,8 +49,8 @@
     z-index: 20;
   }
   @include mobile-mode-por {
-      padding: 20% 0;
-    }
+    padding: 20% 0;
+  }
   h2,
   p,
   .journey-button {
@@ -71,23 +71,34 @@
   }
   h2 {
     @include mobile-mode-xs {
-       font-size: 40px;
+      font-size: 40px;
     }
   }
-
-  .content-border {
-    transition: width 1s, height 10s ease-in;
+  .mobile-line {
     @include tablet-mode-por {
-      height: 100%;
-      width: 150%;
-      background-color: $tint;
-      position: absolute;
-      bottom: 0;
-      left: -50px;
-      z-index: 10;
+      height: 5px;
+      width: 100%;
+      position: relative;
+      z-index: 20;
+      border-top: 1px solid $font-text;
+      border-bottom: 1px solid $font-text;
     }
-    @include mobile-mode-por {
-      top: 20px;
-    }
+    
+  }
+}
+
+.content-border {
+  transition: width 1s, height 10s ease-in;
+  @include tablet-mode-por {
+    height: 100%;
+    width: 150%;
+    background-color: $tint;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    z-index: 10;
+  }
+  @include mobile-mode-por {
+    top: 20px;
   }
 }
