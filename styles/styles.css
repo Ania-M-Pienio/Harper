@@ -473,13 +473,6 @@ nav ul li:nth-child(5) {
   }
 }
 
-@media (max-width: 420px) {
-  .banner .title-logo {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-  }
-}
-
 .title-name {
   width: 300px;
   height: auto;
@@ -532,6 +525,12 @@ nav ul li:nth-child(5) {
   .title-graphic {
     width: 120px;
     left: -65px;
+  }
+}
+
+@media (max-width: 470px) {
+  .title-graphic {
+    left: -55px;
   }
 }
 
@@ -1149,7 +1148,7 @@ nav ul li:nth-child(5) {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 470px) {
   .journey-content h2 {
     font-size: 40px;
   }
