@@ -14,7 +14,14 @@
   flex-wrap: wrap;
   li {
     width: 50%;
-    display:flex;
+    display: flex;
+    @include tablet-mode-por {
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: none;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -28,13 +35,21 @@
   display: flex;
   flex-direction: column;
   padding-left: 5%;
+  h3 {
+    padding: 2% 0 5%;
+  }
+  p {
+    margin: 0;
+  }
 }
 
-.links .link-icon div {
-  height: auto;
+.links .link-icon i {
   border: 15px solid $background-light;
   border-radius: 50%;
   background-color: $background-light;
+  @include tablet-mode-por {
+    width: unset;
+  }
 }
 
 .links ul li:nth-of-type(1),
@@ -46,6 +61,3 @@
 .links ul li:nth-of-type(4) {
   padding-left: 5%;
 }
-
-
-
