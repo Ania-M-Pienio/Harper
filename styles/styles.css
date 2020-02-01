@@ -759,6 +759,18 @@ nav ul li:nth-child(5) {
   height: auto;
 }
 
+@media (max-width: 960px) {
+  .details .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: relative;
+  }
+}
+
 .details .wrapper article {
   width: 50%;
   height: auto;
@@ -767,6 +779,12 @@ nav ul li:nth-child(5) {
 .details .wrapper aside {
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 960px) {
+  .details .wrapper aside {
+    width: 100%;
+  }
 }
 
 .details .wrapper aside img {
@@ -779,8 +797,23 @@ nav ul li:nth-child(5) {
   height: 100px;
 }
 
-.photo-container {
+.details .photo-container {
   position: relative;
+}
+
+@media (max-width: 960px) {
+  .details .photo-container {
+    position: static;
+    -webkit-box-shadow: 20px 20px #68B0C1;
+            box-shadow: 20px 20px #68B0C1;
+  }
+}
+
+@media (max-width: 960px) {
+  .details .travel-photo,
+  .details .favorite-photo {
+    padding: 0 20px 0 0;
+  }
 }
 
 .travel-photo .photo-border {
@@ -793,8 +826,16 @@ nav ul li:nth-child(5) {
   right: -20px;
 }
 
+@media (max-width: 960px) {
+  .travel-photo .photo-border {
+    visibility: hidden;
+  }
+}
+
 .details .travel-content {
   padding: 100px 0 0 100px;
+  -webkit-transition: padding 1s;
+  transition: padding 1s;
 }
 
 @media (max-width: 1030px) {
@@ -813,8 +854,16 @@ nav ul li:nth-child(5) {
   left: 20px;
 }
 
+@media (max-width: 960px) {
+  .favorite-photo .photo-border {
+    visibility: hidden;
+  }
+}
+
 .details .favorite-content {
   padding: 0 100px 100px 0;
+  -webkit-transition: padding 1s;
+  transition: padding 1s;
 }
 
 @media (max-width: 1030px) {
@@ -827,6 +876,14 @@ nav ul li:nth-child(5) {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+@media (max-width: 960px) {
+  .details .favorite-photo {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
 }
 
 html {
