@@ -1,4 +1,6 @@
 .blog-banner {
-   height: 800px;
+   height: 50vh;
    background-image: url(../assets/blog-image-1.jpg);
+   background-size: cover;
+   background-position: bottom center;
 }

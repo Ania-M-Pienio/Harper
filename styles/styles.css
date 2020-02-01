@@ -1266,6 +1266,13 @@ footer p {
   text-align: center;
 }
 
+.blog-banner {
+  height: 50vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+}
+
 body {
   overflow-x: hidden;
 }
