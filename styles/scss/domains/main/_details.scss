@@ -12,17 +12,31 @@
   @include tablet-mode-por {
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: center;
     position: relative;
   }
   article {
     width: 50%;
     height: auto;
+    @include tablet-mode-por {
+      width: 100%;
+    }
+    p,
+    h3,
+    .content-button {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      padding: 0 20% 5%;
+    }
   }
   aside {
     width: 50%;
     height: auto;
     @include tablet-mode-por {
-      width: 100%;     
+      width: 100%;
     }
     img {
       position: relative;
@@ -32,6 +46,9 @@
   .spacer {
     width: 100%;
     height: 100px;
+    @include tablet-mode-por {
+      display: none;
+    }
   }
 }
 
@@ -39,23 +56,18 @@
   position: relative;
   @include tablet-mode-por {
     width: 100%;
-    padding: 2% 2% 20% 20%;
-    position: static;
-    background-color: $background-light;
+    padding: 0;
   }
   img {
     @include tablet-mode-por {
-      border: 5px solid white;
-
-    }    
+      border: 8px solid white;
+    }
   }
-  
 }
-
 
 .details .travel-photo,
 .details .favorite-photo {
-   @include tablet-mode-por {
+  @include tablet-mode-por {
     padding: 0 20px 0 0;
   }
 }
@@ -69,7 +81,10 @@
   bottom: -20px;
   right: -20px;
   @include tablet-mode-por {
-    visibility: hidden;
+    background-color: $background-light;
+    height: 120%;
+    bottom: -50px;
+    right: -100px;
   }
 }
 
@@ -80,8 +95,9 @@
     padding: 50px 0 0 50px;
   }
   @include tablet-mode-por {
-    padding: 0;
-
+    padding: 100px 0;
+    position: relative;
+    z-index: 30;
   }
 }
 
@@ -94,7 +110,9 @@
   top: 20px;
   left: 20px;
   @include tablet-mode-por {
-    visibility: hidden;
+    height: 120%;
+    top: -50px;
+    left: -100px;
   }
 }
 
@@ -105,8 +123,11 @@
     padding: 0 50px 50px 0;
   }
   @include tablet-mode-por {
-    padding: 0;
-  }  
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 30;
+  }
 }
 
 .details .favorite-photo {

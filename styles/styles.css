@@ -599,9 +599,15 @@ nav ul li:nth-child(5) {
 
 .highlight {
   height: 50vh;
-  background-image: url(../assets/home-image-2.jpg);
+  background: url(../assets/home-image-2.jpg) #68B0C1;
   background-size: cover;
   background-repeat: none;
+}
+
+@media (max-width: 960px) {
+  .highlight {
+    background-position: center;
+  }
 }
 
 .links {
@@ -767,6 +773,9 @@ nav ul li:nth-child(5) {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
   }
 }
@@ -774,6 +783,28 @@ nav ul li:nth-child(5) {
 .details .wrapper article {
   width: 50%;
   height: auto;
+}
+
+@media (max-width: 960px) {
+  .details .wrapper article {
+    width: 100%;
+  }
+}
+
+.details .wrapper article p,
+.details .wrapper article h3,
+.details .wrapper article .content-button {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.details .wrapper article p {
+  padding: 0 20% 5%;
 }
 
 .details .wrapper aside {
@@ -797,6 +828,12 @@ nav ul li:nth-child(5) {
   height: 100px;
 }
 
+@media (max-width: 960px) {
+  .details .wrapper .spacer {
+    display: none;
+  }
+}
+
 .details .photo-container {
   position: relative;
 }
@@ -804,15 +841,13 @@ nav ul li:nth-child(5) {
 @media (max-width: 960px) {
   .details .photo-container {
     width: 100%;
-    padding: 2% 2% 20% 20%;
-    position: static;
-    background-color: #B9DDE7;
+    padding: 0;
   }
 }
 
 @media (max-width: 960px) {
   .details .photo-container img {
-    border: 5px solid white;
+    border: 8px solid white;
   }
 }
 
@@ -835,7 +870,10 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 960px) {
   .travel-photo .photo-border {
-    visibility: hidden;
+    background-color: #B9DDE7;
+    height: 120%;
+    bottom: -50px;
+    right: -100px;
   }
 }
 
@@ -853,7 +891,9 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 960px) {
   .details .travel-content {
-    padding: 0;
+    padding: 100px 0;
+    position: relative;
+    z-index: 30;
   }
 }
 
@@ -869,7 +909,9 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 960px) {
   .favorite-photo .photo-border {
-    visibility: hidden;
+    height: 120%;
+    top: -50px;
+    left: -100px;
   }
 }
 
@@ -887,7 +929,10 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 960px) {
   .details .favorite-content {
-    padding: 0;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 30;
   }
 }
 
@@ -903,6 +948,18 @@ nav ul li:nth-child(5) {
         -ms-flex-order: unset;
             order: unset;
   }
+}
+
+.journey {
+  background-color: #F6F6F6;
+}
+
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 body {
