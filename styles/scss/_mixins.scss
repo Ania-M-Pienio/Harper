@@ -15,7 +15,7 @@
 
 // media queries
 @mixin tablet-mode-lan {
-  @media (max-width: 1030px) {
+  @media (max-width: 1050px) {
     @content;
   }
 }

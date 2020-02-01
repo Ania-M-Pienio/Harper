@@ -1,7 +1,7 @@
 .journey {
   background-color: $tint;
   @include tablet-mode-por {
-     background-color: $background-dark;
+    background-color: $background-dark;
   }
 }
 
@@ -13,24 +13,81 @@
   @include tablet-mode-por {
     flex-direction: column;
     padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-bottom: 0;
   }
 }
 
 .journey-photo {
   flex: 1;
-  flex-basis: 100px;
+  flex-basis: 50px;
   flex-shrink: 1;
-  height: auto;
-  background-color: $background-dark; 
+  height: 100%;
+  background-color: $background-dark;
   box-shadow: 10px 10px $background-dark;
+  transition: padding 1s;
   @include tablet-mode-por {
     box-shadow: none;
-    padding: 20%;
+    padding: 10% 20%;
+  }
+  @include mobile-mode-por {
+    padding: 5% 5%;
+  }
+
+  img {
+    @include tablet-mode-por {
+      border: 10px solid $tint;
+    }
   }
 }
 
 .journey-content {
   flex: 2;
-  padding: 0 5% 0 5%;
+  padding: 0 0 0 5%;
+  @include tablet-mode-por {
+    padding: 5% 0;
+    position: relative;
+    z-index: 20;
+  }
+  @include mobile-mode-por {
+      padding: 20% 0;
+    }
+  h2,
+  p,
+  .journey-button {
+    @include tablet-mode-por {
+      padding: 2% 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 30;
+    }
+  }
+  p {
+    @include tablet-mode-por {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  h2 {
+    @include mobile-mode-xs {
+       font-size: 40px;
+    }
+  }
+
+  .content-border {
+    transition: width 1s, height 10s ease-in;
+    @include tablet-mode-por {
+      height: 100%;
+      width: 150%;
+      background-color: $tint;
+      position: absolute;
+      bottom: 0;
+      left: -50px;
+      z-index: 10;
+    }
+    @include mobile-mode-por {
+      top: 20px;
+    }
+  }
 }
