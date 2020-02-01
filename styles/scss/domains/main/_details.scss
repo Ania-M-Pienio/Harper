@@ -1,13 +1,28 @@
 .details {
-   background-color: none;
-   
+  background-color: none;
 }
 
 .details-travel {
-   margin-bottom: 40px;
+  display: flex;
+  margin-bottom: 60px;
+  .details-photo {
+    flex: 2.5;
+    order: -1;
+  }
+  .details-content {
+    flex: 2;
+    padding: 10% 0 0 10%;
+  }
 }
 
-.details-travel {
-   display:flex;
-     
+.details-favorite {
+  display: flex;
+  margin-bottom: 0px;
+  .details-photo {
+     flex: 2.5;
+  }
+  .details-content {
+    flex: 2;
+    padding: 0 10% 10% 0;
+  }
 }
