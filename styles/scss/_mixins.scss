@@ -21,7 +21,7 @@
 }
 
 @mixin tablet-mode-por {
-  @media (max-width: 960px) {
+  @media (max-width: 970px) {
     @content;
   }
 }

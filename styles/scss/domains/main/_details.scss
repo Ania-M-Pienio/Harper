@@ -24,12 +24,16 @@
     p,
     h3,
     .content-button {
-      text-align: center;
-      display: flex;
-      justify-content: center;
+      @include tablet-mode-por {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
     }
     p {
-      padding: 0 20% 5%;
+      @include tablet-mode-por {
+        padding: 0 20% 5%;
+      }
     }
   }
   aside {
