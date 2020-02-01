@@ -17,12 +17,18 @@
 
 // font-family: 'Oswald', sans-serif;
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 // typography
 html {
   font-size: 62.5%;
   color: $font-text;
   margin: 0;
   padding: 0;
+  
 }
 
 // all images

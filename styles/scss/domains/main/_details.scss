@@ -38,10 +38,20 @@
 .details .photo-container {
   position: relative;
   @include tablet-mode-por {
+    width: 100%;
+    padding: 2% 2% 20% 20%;
     position: static;
-    box-shadow: 20px 20px $background-medium;
+    background-color: $background-light;
   }
+  img {
+    @include tablet-mode-por {
+      border: 5px solid white;
+
+    }    
+  }
+  
 }
+
 
 .details .travel-photo,
 .details .favorite-photo {
@@ -70,6 +80,7 @@
     padding: 50px 0 0 50px;
   }
   @include tablet-mode-por {
+    padding: 0;
 
   }
 }
@@ -93,6 +104,9 @@
   @include tablet-mode-lan {
     padding: 0 50px 50px 0;
   }
+  @include tablet-mode-por {
+    padding: 0;
+  }  
 }
 
 .details .favorite-photo {

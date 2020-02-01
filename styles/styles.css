@@ -803,9 +803,16 @@ nav ul li:nth-child(5) {
 
 @media (max-width: 960px) {
   .details .photo-container {
+    width: 100%;
+    padding: 2% 2% 20% 20%;
     position: static;
-    -webkit-box-shadow: 20px 20px #68B0C1;
-            box-shadow: 20px 20px #68B0C1;
+    background-color: #B9DDE7;
+  }
+}
+
+@media (max-width: 960px) {
+  .details .photo-container img {
+    border: 5px solid white;
   }
 }
 
@@ -844,6 +851,12 @@ nav ul li:nth-child(5) {
   }
 }
 
+@media (max-width: 960px) {
+  .details .travel-content {
+    padding: 0;
+  }
+}
+
 .favorite-photo .photo-border {
   background-color: #B9DDE7;
   height: 100%;
@@ -872,6 +885,12 @@ nav ul li:nth-child(5) {
   }
 }
 
+@media (max-width: 960px) {
+  .details .favorite-content {
+    padding: 0;
+  }
+}
+
 .details .favorite-photo {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -884,6 +903,11 @@ nav ul li:nth-child(5) {
         -ms-flex-order: unset;
             order: unset;
   }
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 html {
