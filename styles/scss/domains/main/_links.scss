@@ -1,11 +1,10 @@
 .links {
   background-color: $tint;
-  height: auto;
 }
 
 .links .wrapper {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .links ul {
@@ -20,33 +19,51 @@
       flex-direction: column;
       flex-wrap: none;
       padding: 0;
-      margin: 0;
+      margin: 0 0 8% 0;
     }
   }
 }
 
-.links-icon {
-  flex: 1;
-  height: 100%;
+.link-icon {
+  display: flex;
+  @include tablet-mode-por {
+    justify-content: center;
+  }
 }
 
 .link-content {
   flex: 2;
   display: flex;
   flex-direction: column;
+
   padding-left: 5%;
+
+  @include tablet-mode-por {
+    padding-left: 0;
+  }
   h3 {
     padding: 2% 0 5%;
+    @include tablet-mode-por {
+      padding: 2% 0 5%;
+      text-align: center;
+    }
   }
   p {
     margin: 0;
+    height: 200px;
+    @include tablet-mode-por {
+      padding: 0 10% 5% 10%;
+      // border-bottom: 1px solid $font-text;
+    }
   }
 }
 
 .links .link-icon i {
+  width: 100%;
   border: 15px solid $background-light;
   border-radius: 50%;
   background-color: $background-light;
+  padding: 0;
   @include tablet-mode-por {
     width: unset;
   }
@@ -55,9 +72,15 @@
 .links ul li:nth-of-type(1),
 .links ul li:nth-of-type(2) {
   padding-bottom: 5%;
+  @include tablet-mode-por {
+    padding-bottom: 0;
+  }
 }
 
 .links ul li:nth-of-type(2),
 .links ul li:nth-of-type(4) {
   padding-left: 5%;
+  @include tablet-mode-por {
+    padding-left: 0;
+  }
 }
