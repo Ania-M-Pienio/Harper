@@ -34,7 +34,7 @@
       }
     }
     p {
-      @include tablet-mode-por {      
+      @include tablet-mode-por {
         padding: 0 20% 5%;
       }
     }
@@ -44,6 +44,8 @@
     height: auto;
     @include tablet-mode-por {
       width: 100%;
+    }
+    @include mobile-mode-lan {
     }
     img {
       position: relative;
@@ -94,6 +96,10 @@
     bottom: -50px;
     right: -100px;
   }
+  @include mobile-mode-lan {
+    top: -40px;
+    height: 60%;
+  }
 }
 
 .details .travel-content {
@@ -106,6 +112,9 @@
     padding: 100px 0;
     position: relative;
     z-index: 30;
+  }
+  @include mobile-mode-lan {
+    padding: 50px 0 100px 0;
   }
 }
 
@@ -122,6 +131,10 @@
     top: -50px;
     left: -100px;
   }
+  @include mobile-mode-lan {
+    top: -40px;
+    height: 60%;
+  }
 }
 
 .details .favorite-content {
@@ -135,6 +148,9 @@
     padding: 100px 0;
     position: relative;
     z-index: 30;
+  }
+  @include mobile-mode-lan {
+    padding: 50px 0 100px 0;
   }
 }
 
