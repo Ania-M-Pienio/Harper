@@ -1715,6 +1715,7 @@ footer p {
 @media (max-width: 970px) {
   .contact-media .wrapper .info-wrapper .contact-info {
     margin-right: 0;
+    border-bottom: 5px solid #227284;
   }
 }
 
@@ -1809,16 +1810,20 @@ footer p {
   }
 }
 
-.contact-form .page-form form .form-names .name {
-  width: 100%;
-  height: 50px;
-  margin-bottom: 2%;
-  padding-right: 0;
+@media (max-width: 680px) {
+  .contact-form .page-form form .form-names .name {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    padding-right: 0;
+  }
 }
 
-.contact-form .page-form form .form-names .email {
-  width: 100%;
-  height: 50px;
+@media (max-width: 680px) {
+  .contact-form .page-form form .form-names .email {
+    width: 100%;
+    height: 50px;
+  }
 }
 
 .contact-form .page-form form .form-comment {

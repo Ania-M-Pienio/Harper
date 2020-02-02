@@ -50,6 +50,7 @@
       padding: $blog;
       @include tablet-mode-por {
         margin-right: 0;
+        border-bottom: 5px solid $background-dark;
       }
       .info-content {
         h3,
@@ -105,14 +106,18 @@
           height: 100px;
         }
         .name {
-          width: 100%;
-          height: 50px;
-          margin-bottom: 2%;
-          padding-right: 0;
+          @include mobile-mode-lan {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 2%;
+            padding-right: 0;
+          }
         }
         .email {
-          width: 100%;
-          height: 50px;
+          @include mobile-mode-lan {
+            width: 100%;
+            height: 50px;
+          }
         }
       }
       .form-comment {
