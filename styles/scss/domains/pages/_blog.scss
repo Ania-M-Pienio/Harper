@@ -1,6 +1,20 @@
 .blog-banner {
-   height: 50vh;
+   height: 40vh;
    background-image: url(../assets/blog-image-1.jpg);
    background-size: cover;
    background-position: bottom center;
+}
+
+.blog-banner .wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.blog-banner h1 {
+   width: 100%;
+   margin: 0;
+   position: relative; 
+   top: 40px;
 }

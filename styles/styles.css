@@ -1267,10 +1267,31 @@ footer p {
 }
 
 .blog-banner {
-  height: 50vh;
+  height: 40vh;
   background-image: url(../assets/blog-image-1.jpg);
   background-size: cover;
   background-position: bottom center;
+}
+
+.blog-banner .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blog-banner h1 {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 40px;
 }
 
 body {
