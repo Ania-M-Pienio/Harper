@@ -33,6 +33,7 @@
     </header>
 
     <main>
+
       <!-- Banner -->
       <section class="blog-banner">
         <div class="wrapper">
@@ -42,19 +43,23 @@
 
       <!-- Blog -->
       <section class="blog-main">
+
         <div class="wrapper">
-          <!-- left side     -->
-          <aside class="blog-feature">
+
+
+        <!-- left side     -->
+        <aside class="blog-feature">
+          <div class="wrapper">
             <!-- about harper -->
-            <div class="feature-about">
+            <div class="feature-about block">
               <div class="about-photo">
                 <img src="assets/blog-image-2.jpg" alt="About Harper" />
               </div>
               <div class="about-content">
                 <h2>ABOUT HARPER</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Exercitationem mollitia est veritatis dolorum magni totam quae
+                  Nam ipsum dolor sit amet consectetur, adipisicing elit.
+                  Exercitationem mollitia est veritatis dolorum magni
                   sunt voluptate minima aperiam nostrum qui eum molestias in.
                   <a href="#about">Find out more</a>
                 </p>
@@ -62,13 +67,23 @@
             </div>
 
             <!-- recent posts -->
-            <div class="feature-posts"></div>
-          </aside>
+            <div class="feature-posts block">
+              <h2>RECENT POSTS</h2>
+              <ul>
+                <li><p>Donec ipsum dolor sit.</p></li>
+                <li><p>Augue lacinia adipisicing elit.</p></li>
+                <li><p>Semper rerum libero maxime.</p></li>
+                <li><p>Scelerisque nisi impedit.</p></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
 
-          <!-- right side -->
-          <article class="blog-post">
+        <!-- right side -->
+        <article class="blog-post">
+          <div class="wrapper">
             <!-- travel destinations -->
-            <section class="post-content">
+            <section class="post-content block">
               <h2>MY FAVOURITE TRAVEL DESTINATION</h2>
               <p>Monday October 8th, 2018 by Harper</p>
               <p>
@@ -132,7 +147,7 @@
             <section class="post-comments">
               <ul>
                 <!-- FIRST comment -->
-                <li>
+                <li class="block">
                   <div class="comments-photo">
                     <img src="assets/blog-image-3.jpg" alt="Commentor One" />
                   </div>
@@ -148,7 +163,7 @@
                 </li>
 
                 <!-- SECOND comment -->
-                <li>
+                <li class="block">
                   <div class="comments-photo">
                     <img src="assets/blog-image-4.jpg" alt="Commentor Two" />
                   </div>
@@ -176,6 +191,7 @@
                       id="name"
                       name="name"
                       placeholder="Name"
+                      class="block"
                     />
                   </div>
 
@@ -186,6 +202,7 @@
                       id="name"
                       name="name"
                       placeholder="Email address"
+                      class="block"
                     />
                   </div>
                 </div>
@@ -197,11 +214,14 @@
                     id="comment"
                     cols="30"
                     rows="10"
+                    class="block"
                   ></textarea>
                 </div>
               </form>
             </section>
-          </article>
+          </div>
+        </article>
+
         </div>
         <!-- wrapper ends -->
       </section>

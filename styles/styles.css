@@ -1266,6 +1266,10 @@ footer p {
   text-align: center;
 }
 
+.block {
+  background-color: white;
+}
+
 .blog-banner {
   height: 40vh;
   background-image: url(../assets/blog-image-1.jpg);
@@ -1292,6 +1296,60 @@ footer p {
   margin: 0;
   position: relative;
   top: 40px;
+}
+
+.blog-main {
+  background-color: #F6F6F6;
+}
+
+.blog-main .wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog-main .blog-feature .wrapper {
+  padding: 0 5% 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-main .blog-feature .wrapper .feature-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.blog-main .blog-feature .wrapper .feature-about .about-content {
+  padding-top: 5%;
+}
+
+.blog-main .blog-feature .wrapper .feature-posts {
+  padding: 5%;
+}
+
+.blog-main .blog-post .wrapper {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body {

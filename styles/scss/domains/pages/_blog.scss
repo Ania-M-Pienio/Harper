@@ -1,20 +1,98 @@
+// general
+.block {
+  background-color: white;
+}
+
+// banner
+
 .blog-banner {
-   height: 40vh;
-   background-image: url(../assets/blog-image-1.jpg);
-   background-size: cover;
-   background-position: bottom center;
+  height: 40vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .blog-banner .wrapper {
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .blog-banner h1 {
-   width: 100%;
-   margin: 0;
-   position: relative; 
-   top: 40px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 40px;
 }
+
+// blog
+
+.blog-main {
+  background-color: $tint;
+}
+
+.blog-main .wrapper {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+//   justify-content: space-between;
+}
+
+
+//left
+.blog-main .blog-feature .wrapper {
+   padding: 0 5% 0 0;
+   display: flex;
+   flex-direction: column;
+   .feature-about {
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      margin-bottom: 5%;
+      .about-photo {
+
+      }
+      .about-content {
+         padding-top: 5%;
+      }
+   }
+   .feature-posts {
+      padding: 5%;
+   }
+}
+
+//right
+.blog-main .blog-post .wrapper {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+
+}
+
+
+// left
+// .blog-main .wrapper .blog-feature {
+//   flex: 1;
+//   .wrapper {
+//     padding: 0;
+//     .feature-about {
+//     }
+//     .feature-posts {
+//     }
+//   }
+// }
+
+// right
+// main .blog-main .blog-post {
+//   flex: 2;
+//   .wrapper {
+//     padding: 0;
+//     .post-content {
+//     }
+//     .post-comments {
+//     }
+//     .post-form {
+//     }
+//   }
+// }
