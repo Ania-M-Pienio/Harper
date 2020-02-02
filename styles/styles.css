@@ -628,6 +628,7 @@ nav ul li:nth-child(5) {
 @media (max-width: 970px) {
   .highlight {
     background-position: center;
+    height: 40vh;
   }
 }
 
@@ -1659,12 +1660,19 @@ footer p {
   top: 40px;
 }
 
+@media (max-width: 480px) {
+  .contact-banner h1 span {
+    display: none;
+  }
+}
+
 .contact-media {
   background-color: #F6F6F6;
 }
 
 .contact-media .wrapper {
   width: 100%;
+  min-height: 52vh;
   padding-top: 80px;
   padding-bottom: 5%;
   display: -webkit-box;
@@ -1672,41 +1680,157 @@ footer p {
   display: flex;
 }
 
-.contact-media .wrapper .contact-info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 55%;
+@media (max-width: 970px) {
+  .contact-media .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.contact-media .wrapper .info-wrapper {
+  -webkit-box-flex: 1.1;
+      -ms-flex: 1.1;
+          flex: 1.1;
+  height: 500px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+@media (max-width: 970px) {
+  .contact-media .wrapper .info-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 2%;
+  }
+}
+
+.contact-media .wrapper .info-wrapper .contact-info {
   margin-right: 30px;
   padding: 30px;
 }
 
-.contact-media .wrapper .contact-info .info-wrapper {
-  height: 100%;
+@media (max-width: 970px) {
+  .contact-media .wrapper .info-wrapper .contact-info {
+    margin-right: 0;
+  }
 }
 
-.contact-media .wrapper .contact-info .info-wrapper .info-icons ul {
+@media (max-width: 970px) {
+  .contact-media .wrapper .info-wrapper .contact-info .info-content h3,
+  .contact-media .wrapper .info-wrapper .contact-info .info-content p {
+    text-align: center;
+  }
+}
+
+.contact-media .wrapper .info-wrapper .contact-info .info-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 3%;
 }
 
-.contact-media .wrapper .contact-info .info-wrapper .info-icons ul li {
+@media (max-width: 970px) {
+  .contact-media .wrapper .info-wrapper .contact-info .info-icons ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contact-media .wrapper .info-wrapper .contact-info .info-icons ul li {
   padding-right: 15%;
 }
 
-.contact-media .wrapper .contact-form {
-  -webkit-box-flex: 2.5;
-      -ms-flex: 2.5;
-          flex: 2.5;
+@media (max-width: 970px) {
+  .contact-media .wrapper .info-wrapper .contact-info .info-icons ul li {
+    padding: 3%;
+  }
 }
 
-.contact-media .wrapper .contact-form .page-form {
+.contact-media .wrapper .info-wrapper .contact-info .info-icons ul li a i {
+  color: #227284;
+}
+
+.contact-form {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 500px;
+}
+
+@media (max-width: 970px) {
+  .contact-form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+  }
+}
+
+.contact-form .page-form {
+  height: 500px;
   padding-top: 0;
   margin-top: 0;
+}
+
+.contact-form .page-form form {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-form .page-form form .form-names {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 680px) {
+  .contact-form .page-form form .form-names {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100px;
+  }
+}
+
+.contact-form .page-form form .form-names .name {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 2%;
+  padding-right: 0;
+}
+
+.contact-form .page-form form .form-names .email {
+  width: 100%;
+  height: 50px;
+}
+
+.contact-form .page-form form .form-comment {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.contact-form .page-form form .form-button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 body {
@@ -1718,6 +1842,7 @@ html {
   color: #504646;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 img {
@@ -1803,6 +1928,15 @@ i {
   width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 h1 {
@@ -1839,7 +1973,7 @@ h3 {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 5%;
 }

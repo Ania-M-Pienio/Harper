@@ -17,6 +17,11 @@
   margin: 0;
   position: relative;
   top: 40px;
+  span {
+    @include mobile-mode-por {
+      display: none;
+    }
+  }
 }
 
 .contact-media {
@@ -25,35 +30,97 @@
 
 .contact-media .wrapper {
   width: 100%;
+  min-height: 52vh;
   padding-top: 80px;
   padding-bottom: 5%;
   display: flex;
-  .contact-info {
-    flex: 1;
-    height: 55%;
-    margin-right: $blog;
-    padding: $blog;
-    .info-wrapper {
-       height: 100%;
+  @include tablet-mode-por {
+    flex-direction: column;
+  }
+  .info-wrapper {
+    flex: 1.1;
+    height: 500px;
+    flex-basis: 100px;
+    @include tablet-mode-por {
+      flex: 1;
+      margin-bottom: 2%;
+    }
+    .contact-info {
+      margin-right: $blog;
+      padding: $blog;
+      @include tablet-mode-por {
+        margin-right: 0;
+      }
+      .info-content {
+        h3,
+        p {
+          @include tablet-mode-por {
+            text-align: center;
+          }
+        }
+      }
       .info-icons ul {
         display: flex;
         justify-content: flex-start;
+        margin-bottom: 3%;
+        @include tablet-mode-por {
+          justify-content: center;
+        }
         li {
           padding-right: 15%;
+          @include tablet-mode-por {
+            padding: 3%;
+          }
+          a {
+            i {
+              color: $background-dark;
+            }
+          }
         }
       }
     }
   }
-  .contact-form {
-    flex: 2.5;
-    .page-form {
-       padding-top: 0;
-       margin-top: 0;
+}
+.contact-form {
+  flex: 2;
+  height: 500px;
+  @include tablet-mode-por {
+    flex: 1;
+    width: 100%;
+  }
+  .page-form {
+    height: 500px;
+    padding-top: 0;
+    margin-top: 0;
+    form {
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .form-names {
+        flex: 1;
+
+        @include mobile-mode-lan {
+          flex-direction: column;
+          height: 100px;
+        }
+        .name {
+          width: 100%;
+          height: 50px;
+          margin-bottom: 2%;
+          padding-right: 0;
+        }
+        .email {
+          width: 100%;
+          height: 50px;
+        }
+      }
+      .form-comment {
+        flex: 3;
+      }
+      .form-button {
+        flex: 1;
+      }
     }
   }
-}
-
-
-footer {
-  // display: none;
 }
