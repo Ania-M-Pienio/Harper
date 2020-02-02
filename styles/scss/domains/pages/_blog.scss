@@ -99,7 +99,7 @@
           padding-left: 2%;
           @include fonts("Cabin", 20px, normal, normal, 32px);
           @include tablet-mode-por {
-             text-align: left;        
+            text-align: left;
           }
         }
       }
@@ -146,6 +146,9 @@
       padding: $blog;
       margin-bottom: 2%;
       display: flex;
+      @include mobile-mode-lan {
+        flex-direction: column;
+      }
     }
     ul li:nth-of-type(2) {
       border-bottom: 5px solid $background-dark;
@@ -156,12 +159,33 @@
 .blog-post .post-comments ul li {
   .comments-photo {
     flex: 1;
+    @include tablet-mode-por {
+      flex: 1;
+      flex-basis: 90px;
+    }
+    @include mobile-mode-lan {
+      padding: 20%;
+      background-color: $background-light;
+      margin-bottom: 5%;
+    }
+    img {
+      @include mobile-mode-lan {
+         border: 10px solid $tint;
+      }
+    }
   }
   .comments-content {
     flex: 6;
     padding-left: 2%;
+    @include tablet-mode-por {
+      flex: 3;
+    }
     p {
       margin-top: 0;
+      text-align: left;
+      @include tablet-mode-por {
+        width: 100%;
+      }
     }
   }
 }
