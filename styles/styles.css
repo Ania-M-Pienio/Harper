@@ -1665,8 +1665,7 @@ footer p {
 
 .contact-media .wrapper {
   width: 100%;
-  height: auto;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1679,7 +1678,6 @@ footer p {
           flex: 1;
   height: 55%;
   margin-right: 30px;
-  margin-top: 2%;
   padding: 30px;
 }
 
@@ -1700,14 +1698,15 @@ footer p {
   padding-right: 15%;
 }
 
-.contact-media .wrapper .page-form {
+.contact-media .wrapper .contact-form {
   -webkit-box-flex: 2.5;
       -ms-flex: 2.5;
           flex: 2.5;
 }
 
-.contact-media .page-form {
-  height: 500px;
+.contact-media .wrapper .contact-form .page-form {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 body {

@@ -25,15 +25,13 @@
 
 .contact-media .wrapper {
   width: 100%;
-  height: auto;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 5%;
   display: flex;
   .contact-info {
     flex: 1;
     height: 55%;
     margin-right: $blog;
-    margin-top: 2%;
     padding: $blog;
     .info-wrapper {
        height: 100%;
@@ -46,17 +44,15 @@
       }
     }
   }
-  .page-form {
+  .contact-form {
     flex: 2.5;
+    .page-form {
+       padding-top: 0;
+       margin-top: 0;
+    }
   }
 }
 
-.contact-media .page-form {
-  height: 500px;
-  .form-comment {
-    // height: 20%;
-  }
-}
 
 footer {
   // display: none;
