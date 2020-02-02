@@ -38,6 +38,10 @@ img {
   width: 100%;
   max-width: 100%;
   display: block;
+  transition: transform 1s, border 1s;
+  &:hover {
+    transform: scale(1.2);  
+  }
 }
 
 // all paragraphs
@@ -64,6 +68,10 @@ button {
   padding: $button;
   display: block;
   @include fonts('Oswald', 20px, bold, 1px, 32px);
+  transition: color 1s;
+  &:hover {
+    color: $tint;
+  }
 }
 
 // all unordered lists

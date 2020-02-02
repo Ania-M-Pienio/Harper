@@ -1567,6 +1567,13 @@ footer p {
 @media (max-width: 970px) {
   .blog-post .post-comments ul li .comments-content p {
     width: 100%;
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 680px) {
+  .blog-post .post-comments ul li .comments-content p {
+    padding-left: 0;
   }
 }
 
@@ -1633,6 +1640,15 @@ img {
   width: 100%;
   max-width: 100%;
   display: block;
+  -webkit-transition: border 1s, -webkit-transform 1s;
+  transition: border 1s, -webkit-transform 1s;
+  transition: transform 1s, border 1s;
+  transition: transform 1s, border 1s, -webkit-transform 1s;
+}
+
+img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 p {
@@ -1670,6 +1686,12 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 32px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+button:hover {
+  color: #F6F6F6;
 }
 
 ul {

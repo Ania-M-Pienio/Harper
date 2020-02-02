@@ -185,6 +185,10 @@
       text-align: left;
       @include tablet-mode-por {
         width: 100%;
+        padding-left: 4%;
+      }
+      @include mobile-mode-lan {
+        padding-left: 0;
       }
     }
   }
