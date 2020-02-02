@@ -39,9 +39,6 @@ img {
   max-width: 100%;
   display: block;
   transition: transform 1s, border 1s;
-  &:hover {
-    transform: scale(1.2);  
-  }
 }
 
 // all paragraphs

@@ -1646,11 +1646,6 @@ img {
   transition: transform 1s, border 1s, -webkit-transform 1s;
 }
 
-img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 p {
   font-family: "Cabin", sans serif;
   color: #504646;
