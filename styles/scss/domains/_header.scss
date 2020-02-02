@@ -103,7 +103,7 @@ header nav ul li {
 
 nav ul li:nth-child(5) {
   padding: $button;
-  @include oswald(35px, bold, 1px, 29px);
+  @include fonts('Oswald', 35px, bold, 1px, 29px);
   @include mobile-mode-lan {
     order: -2;
     border-bottom: 1px double $font-text;

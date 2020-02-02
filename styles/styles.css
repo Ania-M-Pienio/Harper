@@ -347,7 +347,7 @@ nav ul li.selected a {
 
 nav ul li:nth-child(5) {
   padding: 5px 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 35px;
   font-weight: bold;
@@ -1310,16 +1310,45 @@ footer p {
   display: flex;
 }
 
+@media (max-width: 1050px) {
+  .blog-main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .blog-main .blog-feature {
   -webkit-box-flex: 1.2;
       -ms-flex: 1.2;
           flex: 1.2;
 }
 
+@media (max-width: 1050px) {
+  .blog-main .blog-feature {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 5%;
+  }
+}
+
 .blog-main .blog-post {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+@media (max-width: 1050px) {
+  .blog-main .blog-post {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 .blog-main .blog-feature .wrapper {
@@ -1333,16 +1362,85 @@ footer p {
           flex-direction: column;
 }
 
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper {
+    padding: 0;
+  }
+}
+
 .blog-main .blog-feature .wrapper .feature-recent {
   padding: 30px;
+}
+
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper .feature-recent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.blog-main .blog-feature .wrapper .feature-recent h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 970px) {
+  .blog-main .blog-feature .wrapper .feature-recent h3 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper .feature-recent ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .blog-main .blog-feature .wrapper .feature-recent ul li {
   list-style-type: disc;
 }
 
-.blog-main .blog-feature .wrapper .feature-recent ul li p {
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper .feature-recent ul li {
+    width: 45%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 970px) {
+  .blog-main .blog-feature .wrapper .feature-recent ul li {
+    width: 100%;
+  }
+}
+
+.blog-main .blog-feature .wrapper .feature-recent ul li div {
   padding-left: 2%;
+  font-family: "Cabin", sans serif;
+  color: #504646;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 32px;
+}
+
+@media (max-width: 970px) {
+  .blog-main .blog-feature .wrapper .feature-recent ul li div {
+    text-align: left;
+  }
 }
 
 .blog-main .blog-feature .wrapper .feature-about {
@@ -1357,8 +1455,25 @@ footer p {
   margin-bottom: 5%;
 }
 
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper .feature-about .about-photo {
+    padding: 10%;
+    background-color: #B9DDE7;
+  }
+}
+
+@media (max-width: 1050px) {
+  .blog-main .blog-feature .wrapper .feature-about .about-photo img {
+    border: 10px solid #F6F6F6;
+  }
+}
+
 .blog-main .blog-feature .wrapper .feature-about .about-content {
   padding-top: 5%;
+}
+
+.blog-main .blog-feature .wrapper .feature-about .about-content a {
+  color: #68B0C1;
 }
 
 .blog-main .blog-post .wrapper {
@@ -1407,11 +1522,15 @@ footer p {
   margin-top: 0;
 }
 
+.blog-post .post-form {
+  margin-top: 2%;
+}
+
 .blog-post .post-form .form-names {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4%;
+  margin-bottom: 2.5%;
   height: 50px;
 }
 
@@ -1424,6 +1543,7 @@ footer p {
 .blog-post .post-form .form-names .email input {
   width: 100%;
   height: 100%;
+  padding-left: 2%;
 }
 
 .blog-post .post-form .form-names .name {
@@ -1438,9 +1558,11 @@ footer p {
 .blog-post .post-form .form-comment textarea {
   width: 100%;
   height: 100%;
+  resize: none;
 }
 
 .blog-post .post-form .form-button {
+  margin-top: 2%;
   width: 100%;
 }
 
@@ -1466,8 +1588,11 @@ img {
 }
 
 p {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin", sans serif;
+  color: #504646;
   font-size: 20px;
+  font-weight: normal;
+  letter-spacing: normal;
   line-height: 32px;
   color: #504646;
 }
@@ -1477,6 +1602,12 @@ textarea {
   text-decoration: none;
   border: none;
   padding: 1% 2%;
+  font-family: "Cabin", sans serif;
+  color: #504646;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 32px;
 }
 
 button {
@@ -1485,7 +1616,7 @@ button {
   background-color: #F38D8D;
   padding: 5px 20px;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 20px;
   font-weight: bold;
@@ -1510,7 +1641,7 @@ li {
 
 a {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 20px;
   font-weight: bold;
@@ -1525,7 +1656,7 @@ i {
 }
 
 h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 80px;
   font-weight: bold;
@@ -1536,7 +1667,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 42px;
   font-weight: bold;
@@ -1547,7 +1678,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans serif;
   color: #504646;
   font-size: 32px;
   font-weight: bold;

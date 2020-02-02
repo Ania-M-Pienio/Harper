@@ -42,9 +42,7 @@ img {
 
 // all paragraphs
 p {
-  font-family: "Cabin", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
+  @include fonts('Cabin', 20px, normal, normal, 32px);
   color: $font-text;
 }
 // al inputs etc
@@ -54,6 +52,8 @@ textarea {
   text-decoration: none;
   border: none;
   padding: 1% 2%;  
+  @include fonts('Cabin', 20px, normal, normal, 32px);
+
 }
 
 // all buttons
@@ -63,7 +63,7 @@ button {
   background-color: $accent;
   padding: $button;
   display: block;
-  @include fonts('Oswald', sans-serif, 20px, bold, 1px, 32px);
+  @include fonts('Oswald', 20px, bold, 1px, 32px);
 }
 
 // all unordered lists
