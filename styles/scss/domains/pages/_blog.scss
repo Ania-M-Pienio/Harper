@@ -36,63 +36,105 @@
   padding-top: 90px;
   padding-bottom: 90px;
   display: flex;
-//   justify-content: space-between;
 }
 
+.blog-main .blog-feature {
+  flex: 1.2;
+}
+
+.blog-main .blog-post {
+  flex: 2;
+}
 
 //left
 .blog-main .blog-feature .wrapper {
-   padding: 0 5% 0 0;
-   display: flex;
-   flex-direction: column;
-   .feature-about {
-      display: flex;
-      flex-direction: column;
-      padding: 5%;
-      margin-bottom: 5%;
-      .about-photo {
-
+  padding: 0 5% 0 0;
+  display: flex;
+  flex-direction: column;
+  .feature-recent {
+    padding: $blog;
+    ul li {
+      list-style-type: disc;
+      p {
+        padding-left: 2%;
       }
-      .about-content {
-         padding-top: 5%;
-      }
-   }
-   .feature-posts {
-      padding: 5%;
-   }
+    }
+  }
+  .feature-about {
+    display: flex;
+    flex-direction: column;
+    padding: $blog;
+    margin-bottom: 5%;
+    .about-content {
+      padding-top: 5%;
+    }
+  }
 }
 
 //right
 .blog-main .blog-post .wrapper {
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  .post-content {
+    padding: $blog;
+    margin-bottom: 5%;
+    border-bottom: 5px solid $background-dark;
+  }
+  .post-comments {
+    ul li {
+      padding: $blog;
+      margin-bottom: 2%;
+      display: flex;
+    }
+    ul li:nth-of-type(2) {
+      border-bottom: 5px solid $background-dark;
+    }
+  }
 }
 
+.blog-post .post-comments ul li {
+  .comments-photo {
+    flex: 1;
+  }
+  .comments-content {
+    flex: 6;
+    padding-left: 2%;
+    p {
+      margin-top: 0;
+    }
+  }
+}
 
-// left
-// .blog-main .wrapper .blog-feature {
-//   flex: 1;
-//   .wrapper {
-//     padding: 0;
-//     .feature-about {
-//     }
-//     .feature-posts {
-//     }
-//   }
-// }
-
-// right
-// main .blog-main .blog-post {
-//   flex: 2;
-//   .wrapper {
-//     padding: 0;
-//     .post-content {
-//     }
-//     .post-comments {
-//     }
-//     .post-form {
-//     }
-//   }
-// }
+.blog-post .post-form {
+  .form-names {
+    display: flex;
+    margin-bottom: 4%;
+    height: 50px;
+    .name,
+    .email {
+      width: 50%;
+      input {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+       padding-right: 2.5%;
+    }
+  }
+  .form-comment {
+     width: 100%;
+     height: 200px;
+     textarea {
+        width: 100%;
+        height: 100%;
+     }
+  }
+  .form-button {
+     width: 100%;
+     button {
+        width: 100%;
+     }
+  }
+}

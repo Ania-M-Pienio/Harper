@@ -47,6 +47,14 @@ p {
   line-height: 32px;
   color: $font-text;
 }
+// al inputs etc
+
+input,
+textarea {
+  text-decoration: none;
+  border: none;
+  padding: 1% 2%;  
+}
 
 // all buttons
 button {
@@ -55,7 +63,7 @@ button {
   background-color: $accent;
   padding: $button;
   display: block;
-  @include oswald(20px, bold, 1px, 32px);
+  @include fonts('Oswald', sans-serif, 20px, bold, 1px, 32px);
 }
 
 // all unordered lists
@@ -74,7 +82,7 @@ li {
 
 a {
   text-decoration: none;
-  @include oswald(20px, bold, 1px, 29px);
+  @include fonts('Oswald', 20px, bold, 1px, 29px);
 }
 
 i {
@@ -84,19 +92,19 @@ i {
 }
 
 h1 {
-  @include oswald(80px, bold, 1px, 92px);
+  @include fonts('Oswald', 80px, bold, 1px, 92px);
   padding: 0;
   margin: 0;
 }
 
 h2 {
-  @include oswald(42px, bold, 1px, normal);
+  @include fonts('Oswald', 42px, bold, 1px, normal);
   padding: 0;
   margin: 0;
 }
 
 h3 {
-   @include oswald(32px, bold, 1px, normal);
+   @include fonts('Oswald', 32px, bold, 1px, normal);
    padding: 0;
    margin: 0;
 }
