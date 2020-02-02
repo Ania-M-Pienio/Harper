@@ -1,0 +1,63 @@
+.contact-banner {
+  height: 40vh;
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.contact-banner .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact-banner h1 {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  top: 40px;
+}
+
+.contact-media {
+  background-color: $tint;
+}
+
+.contact-media .wrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 5%;
+  display: flex;
+  .contact-info {
+    flex: 1;
+    height: 55%;
+    margin-right: $blog;
+    margin-top: 2%;
+    padding: $blog;
+    .info-wrapper {
+       height: 100%;
+      .info-icons ul {
+        display: flex;
+        justify-content: flex-start;
+        li {
+          padding-right: 15%;
+        }
+      }
+    }
+  }
+  .page-form {
+    flex: 2.5;
+  }
+}
+
+.contact-media .page-form {
+  height: 500px;
+  .form-comment {
+    // height: 20%;
+  }
+}
+
+footer {
+  // display: none;
+}

@@ -14,6 +14,7 @@
 @import "domains/main/gallery";
 @import "domains/footer";
 @import "domains/pages/blog";
+@import "domains/pages/contact";
 
 // font-family: 'Cabin', sans-serif;
 
@@ -30,7 +31,6 @@ html {
   color: $font-text;
   margin: 0;
   padding: 0;
-  
 }
 
 // all images
@@ -43,7 +43,7 @@ img {
 
 // all paragraphs
 p {
-  @include fonts('Cabin', 20px, normal, normal, 32px);
+  @include fonts("Cabin", 20px, normal, normal, 32px);
   color: $font-text;
 }
 // al inputs etc
@@ -52,9 +52,9 @@ input,
 textarea {
   text-decoration: none;
   border: none;
-  padding: 1% 2%;  
-  @include fonts('Cabin', 20px, normal, normal, 32px);
-
+  padding: 1% 2%;
+  @include fonts("Cabin", 20px, normal, normal, 32px);
+  resize: none;
 }
 
 // all buttons
@@ -64,7 +64,7 @@ button {
   background-color: $accent;
   padding: $button;
   display: block;
-  @include fonts('Oswald', 20px, bold, 1px, 32px);
+  @include fonts("Oswald", 20px, bold, 1px, 32px);
   transition: color 1s;
   &:hover {
     color: $tint;
@@ -87,7 +87,7 @@ li {
 
 a {
   text-decoration: none;
-  @include fonts('Oswald', 20px, bold, 1px, 29px);
+  @include fonts("Oswald", 20px, bold, 1px, 29px);
 }
 
 i {
@@ -97,21 +97,21 @@ i {
 }
 
 h1 {
-  @include fonts('Oswald', 80px, bold, 1px, 92px);
+  @include fonts("Oswald", 80px, bold, 1px, 92px);
   padding: 0;
   margin: 0;
 }
 
 h2 {
-  @include fonts('Oswald', 42px, bold, 1px, normal);
+  @include fonts("Oswald", 42px, bold, 1px, normal);
   padding: 0;
   margin: 0;
 }
 
 h3 {
-   @include fonts('Oswald', 32px, bold, 1px, normal);
-   padding: 0;
-   margin: 0;
+  @include fonts("Oswald", 32px, bold, 1px, normal);
+  padding: 0;
+  margin: 0;
 }
 
 // all wrapper classes
