@@ -34,28 +34,28 @@
   padding-top: 80px;
   padding-bottom: 5%;
   display: flex;
-  @include tablet-mode-por {
+  @include tablet-mode-lan {
     flex-direction: column;
   }
   .info-wrapper {
     flex: 1.1;
     height: 500px;
     flex-basis: 100px;
-    @include tablet-mode-por {
+    @include tablet-mode-lan {
       flex: 1;
       margin-bottom: 2%;
     }
     .contact-info {
       margin-right: $blog;
       padding: $blog;
-      @include tablet-mode-por {
+      @include tablet-mode-lan {
         margin-right: 0;
         border-bottom: 5px solid $background-dark;
       }
       .info-content {
         h3,
         p {
-          @include tablet-mode-por {
+          @include tablet-mode-lan {
             text-align: center;
           }
         }
@@ -64,12 +64,12 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 3%;
-        @include tablet-mode-por {
+        @include tablet-mode-lan {
           justify-content: center;
         }
         li {
           padding-right: 15%;
-          @include tablet-mode-por {
+          @include tablet-mode-lan {
             padding: 3%;
           }
           a {
@@ -85,7 +85,7 @@
 .contact-form {
   flex: 2;
   height: 500px;
-  @include tablet-mode-por {
+  @include tablet-mode-lan {
     flex: 1;
     width: 100%;
   }

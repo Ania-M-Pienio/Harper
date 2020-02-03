@@ -1680,7 +1680,7 @@ footer p {
   display: flex;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1698,7 +1698,7 @@ footer p {
       flex-basis: 100px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper .info-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1712,14 +1712,14 @@ footer p {
   padding: 30px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper .info-wrapper .contact-info {
     margin-right: 0;
     border-bottom: 5px solid #227284;
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper .info-wrapper .contact-info .info-content h3,
   .contact-media .wrapper .info-wrapper .contact-info .info-content p {
     text-align: center;
@@ -1736,7 +1736,7 @@ footer p {
   margin-bottom: 3%;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper .info-wrapper .contact-info .info-icons ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1748,7 +1748,7 @@ footer p {
   padding-right: 15%;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-media .wrapper .info-wrapper .contact-info .info-icons ul li {
     padding: 3%;
   }
@@ -1765,7 +1765,7 @@ footer p {
   height: 500px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
   .contact-form {
     -webkit-box-flex: 1;
         -ms-flex: 1;
