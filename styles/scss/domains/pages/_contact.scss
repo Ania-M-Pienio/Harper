@@ -40,7 +40,7 @@
   .info-wrapper {
     flex: 1.1;
     height: 500px;
-    flex-basis: 100px;
+    // flex-basis: 100px;
     @include tablet-mode-lan {
       flex: 1;
       margin-bottom: 2%;
@@ -84,6 +84,7 @@
 }
 .contact-form {
   flex: 2;
+  flex-basis: 300px;
   height: 500px;
   @include tablet-mode-lan {
     flex: 1;
